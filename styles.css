@@ -1,0 +1,155 @@
+/*input#search {
+    background-image: url(img/search_black_24dp.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+input#search:focus {
+    background-image: none;
+    text-indent: 0px;
+}*/
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    form {
+        width: 150%;
+    }
+}
+
+:root {
+    --color: rgba(204, 204, 204, 0.322);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*flex-direction: column;*/
+    align-content: space-between;
+}
+
+nav {
+    margin: 5px;
+}
+
+nav section a {
+    color: black;
+}
+
+nav section button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main section {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    border: 1px solid var(--color);
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+form label {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+form label:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px var(--color);
+}
+
+label img {
+    filter: opacity(60%);
+}
+
+label input[type=text] {
+    border: none;
+    border-radius: 20px;
+    width: 3fr;
+}
+
+label input[type=text]:focus-visible {
+    outline-width: 0px;
+}
+
+main button {
+    background-color: var(--color);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+main button:hover {
+    border: 1px solid #838383;
+    padding: 9px;
+    color: black;
+}
+
+footer, nav {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--color);
+}
+
+footer section a {
+    color: #5c5c5c;
+}
+
+.left {
+    display: inherit;
+    justify-content: flex-start;
+}
+
+.right {
+    display: inherit;
+    justify-content: flex-end;
+}
